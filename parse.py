@@ -27,3 +27,8 @@ def parse_contest(id, user_id):
             result += [(problem_number, i["time"])]
         problem_number += 1
     return result
+
+
+# staff
+def get_number_of_problem_by_id(contest_id, id):
+    return contests[contest_id][2][id]["short"]
